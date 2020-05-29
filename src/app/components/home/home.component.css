@@ -1,0 +1,21 @@
+.col-xl-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+.classes-grid-w3ls {
+  box-shadow: -2px 2px 15px #dcdcdc;
+  padding: 0;
+  margin: 0 11px;
+  width: 48%;
+}
+.classes-grid-w3ls {
+  margin: 0 9px;
+}
+.classes-grid-w3ls {
+  margin: 0 0 1em; 
+  width: 100%;
+  display: inline-block;
+}

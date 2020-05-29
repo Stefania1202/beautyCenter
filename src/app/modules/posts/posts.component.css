@@ -1,0 +1,15 @@
+.example-card {
+    max-width: 700px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://tse3.mm.bing.net/th?id=OIP.HCqEoTePa_etArC8-ORF9AHaHa&pid=Api&P=0&w=300&h=300');
+    background-size: cover;
+  }
+
+
+  img {
+    width: 700px;
+    height: 400px;}
+
+    

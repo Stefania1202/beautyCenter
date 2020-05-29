@@ -1,0 +1,12 @@
+<mat-toolbar style="background-image: url(https://i.pinimg.com/736x/57/cd/d2/57cdd21490efb4e725700c1d30b1e8eb--spa-reception-area-reception-desks.jpg?b=t);" >
+    <mat-toolbar-row>
+        <img class="logo" src="assets/images/Salon.png" alt="">
+        <button mat-icon-button (click)="toggleSideBar()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    <li class="menu__item"><a class="menu__link scroll" (click)="onSaveData()">Save data</a></li> <br>
+    <li class="menu__item"><a class="menu__link scroll" >Fetch data</a></li> <br>
+    <li class="menu__item"><a class="menu__link scroll" (click)= "onLogout()">Log out</a></li>
+        
+    </mat-toolbar-row>
+</mat-toolbar>

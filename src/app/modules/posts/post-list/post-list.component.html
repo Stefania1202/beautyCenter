@@ -1,0 +1,37 @@
+<!-- <div class="container">
+    <div class="row">
+    
+      
+        <div class="col-md-8">
+        <div class="card mb-4" *ngFor="let post of posts">
+        <img class="card-img-top" [src]="post.imagePath" alt="Card image cap">
+        <div class="card-body">
+          <h2 class="card-title">{{post.name}}</h2>
+          <p class="card-text">{{post.description}}</p>
+          <a href="#" class="btn btn-primary"  routerLink="/new" >Edit</a>|
+          <a href="#" class="btn btn-primary">Save</a>|
+          <a href="#" class="btn btn-primary" (click)="onNewSalon()">Add</a>
+        </div>
+        <div class="card-footer text-muted">
+          Posted on January 1, 2017 by
+          <a href="#">Start Bootstrap</a>
+        </div>
+        </div>
+      </div>
+    </div>
+</div> -->
+
+
+    <!-- Heading Row -->
+    <div class="row">
+     <app-post-item
+     *ngFor="let post of posts; let i = index"
+     [post] = "post"
+     [index] = "i"></app-post-item>
+    
+    </div>
+    
+    <!-- <a routerLink="/posts/new" class="btn btn-primary" (click)="onNewPost()">New Post</a> -->
+    <a (click)="onNewPost()" class="find-about" style="float: left;">New Salon</a>
+    <br><br><br><br><br><br>
+    <!-- /.row -->

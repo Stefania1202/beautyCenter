@@ -1,0 +1,114 @@
+<div class="col-md-5">
+    <div class="card h-100">
+      <img class="card-img-top" src="assets/images/na.jpg" alt="">
+      <div class="card-body"><br>
+        <!-- <h4 class="card-title">Nail</h4> -->
+        <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let salon of salons; let i = index"
+        (click)="onEditItem(i)"
+      >
+        <table>
+          <tr>
+            <th>
+              <div class="col-xs-8">
+                <label for="description">Nail</label>
+              </div>
+            </th>
+            <th> 
+              <div class="col-xs-8">
+              <label for="description">Price</label>
+            </div>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <input 
+            type="text"
+            > {{salon.name}}
+            </td>
+            <td>
+              <div class="col-xs-8"> 
+                <input 
+                type="number"
+                >{{salon.price}}  
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input 
+            type="text"
+            > {{salon.name}}
+            </td>
+            <td>
+              <div class="col-xs-8"> 
+                <input 
+                type="number"
+                >  
+            </div>{{salon.price}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input 
+            type="text"
+            > {{salon.name}}
+            </td>
+            <td>
+              <div class="col-xs-8"> 
+                <input 
+                type="number"
+                >  
+            </div>{{salon.price}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input 
+            type="text"
+            > {{salon.name}}
+            </td>
+            <td>
+              <div class="col-xs-8"> 
+                <input 
+                type="number"
+                >  
+            </div>{{salon.price}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input 
+            type="text"
+            > {{salon.name}}
+            </td>
+            <td>
+              <div class="col-xs-8"> 
+                <input 
+                type="number"
+                >  
+            </div>{{salon.price}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input 
+            type="text"
+            > {{salon.name}}
+            </td>
+            <td>
+              <div class="col-xs-8"> 
+                <input 
+                type="number"
+                >  
+            </div> 
+            {{salon.price}}
+            </td>
+          </tr>
+        </table>
+        </a>
+      </div>
+    </div>
+  </div>

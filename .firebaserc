@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "proiectfinal-b9af1": {
+      "hosting": {
+        "MyApp": [
+          "proiectfinal-b9af1"
+        ]
+      }
+    }
+  }
+}

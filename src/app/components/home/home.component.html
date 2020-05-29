@@ -1,0 +1,582 @@
+<!-- about -->
+<div class="banner-w3layouts">
+  <br> <br><br><br><br><br><br><br> <br><br><br><br>
+  <div id="booking" class="section">
+  <div class="section-center">
+      <div class="container">
+          <div class="row">
+              <div class="booking-form">
+                  <form>
+                      <div class="row no-margin">
+                          <div class="col-md-3">
+                              <div class="form-group">
+                                  <span class="form-label">Location</span>
+                                  <input class="form-control" type="text" placeholder="Country, ZIP, city...">
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="row no-margin">
+                                  <div class="col-md-5">
+                                      <div class="form-group">
+                                          <span class="form-label">Date</span>
+                                          <input class="form-control" type="date" required>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-5">
+                                      <div class="form-group">
+                                          <span class="form-label">Check out</span>
+                                          <input class="form-control" type="date" required>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-2">
+                                      <div class="form-group">
+                                          <span class="form-label">Person</span>
+                                          <select class="form-control">
+                                              <option>1</option>
+                                              <option>2</option>
+                                              <option>3</option>
+                                          </select>
+                                          <span class="select-arrow"></span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="form-btn">
+                                  <button class="submit-btn">Check availability</button>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+<div class="about" id="about">
+<div class="container">
+  <div class="about-top-agileits-w3layouts">
+      <div class="col-md-4 about-left-w3-agileits">
+          <div class="title-main-w3ls">
+              <h3 class="title-w3-agile"><span>A</span>bout <span>U</span>s</h3>
+          </div>
+      </div>
+      <div class="col-md-8 about-right-w3-agileits">
+          <h3>We offer a wide selection of spa services</h3>
+          <p class="w3_agileits_para">Suspendisse ornare sed purus a imperdiet. Integer viverra nisi orci, in volutpat leo ornare vitae. Nulla faucibus, arcu at consequat vulputate, turpis metus blandit urna.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="clearfix"> </div>
+  </div>
+</div>
+  <div class="col-md-4 about-bottoml-agileits">
+  </div>
+  <div class="col-md-8 about-bottomr-agileits">
+      <div class="title-main-w3ls">
+          <h3 class="title-w3-agile"><span>M</span>ake <span>A</span>n <span>A</span>ppointment <span>N</span>ow</h3>
+      </div>
+          <div class="form-agileits">
+          <form #postForm="ngForm" (ngSubmit)="onCreateBooking(postForm.value)" method="post">
+              <h6>Salon and date</h6>
+                  <select class="form-control name">
+                    <input class="name" type="text" id="salonName" name="salonName" placeholder="Please Select Your Service" required ngModel
+                    
+                    >
+                      <option>Please Select Your Service</option>
+                      <option>Test1</option>
+                      <option>Test2</option>
+                      <option>Test3</option>
+                      <option>Relax Day (for two $399.00)</option>
+                  </select>
+                  <input  id="datepicker1" name="date" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" placeholder="mm/dd/yyyy" required ngModel
+                  >
+              <div class="clearfix"> </div>
+              <h6>Personal information</h6>
+                  <input class="name" type="text" id="clientName" name="clientName" placeholder="First Name" required ngModel
+                  >
+                  <!-- <input type="text" name="Last Name" placeholder="Last Name" required=""> -->
+                  <input class="name" type="email" id="email" name="email" placeholder="Email" required ngModel
+                  >
+                  <input type="text" name="phone" id="phone" placeholder="Phone" required ngModel
+                  >
+                  <div class="clearfix"> </div>
+                  <div class="wthree-text"> 
+                      <ul> 
+                          <li>
+                              <label class="anim">
+                                  <input type="checkbox" class="checkbox">
+                                  <span> Please send me latest news & updates</span> 
+                              </label> 
+                          </li>
+                      </ul>
+                      <div class="clearfix"> </div>
+                  </div>
+                  <input type="submit" value="Submit">
+          </form>
+          </div>
+          <!-- <img src="assets/images/about.png" alt=" " class="img-responsive" /> -->
+  </div>
+  <div class="clearfix"> </div>
+
+</div>
+<!-- //about -->
+<!-- services -->
+<!-- <div class="services" id="services">
+  <div class="container">
+  <div class="title-main-w3ls">
+      <h3 class="title-w3-agile"><span>I</span>ncredible <span>S</span>ervices</h3>
+  </div>
+      <div class="w3ls_banner_bottom_grids">
+          <div class="col-md-3 agile_offer_grid">
+              <div class="agileits_w3layouts_offer_grid">
+                  <div class="agile_offer_grid_pos">
+                      <p>01</p>
+                  </div>
+              </div>
+              <div class="wthree_offer_grid1">
+                  <h4>1.Supreme Teamwork</h4>
+                  <p class="w3_agileits_service_para">Praesent nec blandit lorem.</p>
+              </div>
+          </div>
+          
+          <div class="col-md-3 agile_offer_grid">
+              <div class="agileits_w3layouts_offer_grid">
+                  <div class="agile_offer_grid_pos">
+                      <p>02</p>
+                  </div>
+              </div>
+              <div class="wthree_offer_grid1">
+                  <h4>2.Massage Rituals</h4>
+                  <p class="w3_agileits_service_para">Praesent nec blandit lorem.</p>
+              </div>
+          </div>
+          <div class="col-md-3 agile_offer_grid">
+              <div class="agileits_w3layouts_offer_grid">
+                  <div class="agile_offer_grid_pos">
+                      <p>03</p>
+                  </div>
+              </div>
+              <div class="wthree_offer_grid1">
+                  <h4>3.Body Treatments</h4>
+                  <p class="w3_agileits_service_para">Praesent nec blandit lorem.</p>
+              </div>
+          </div>
+          <div class="col-md-3 agile_offer_grid">
+              <div class="agileits_w3layouts_offer_grid">
+                  <div class="agile_offer_grid_pos">
+                      <p>04</p>
+                  </div>
+              </div>
+              <div class="wthree_offer_grid1">
+                  <h4>4.Oil Massage</h4>
+                  <p class="w3_agileits_service_para">Praesent nec blandit lorem.</p>
+              </div>
+          </div>
+          <div class="col-md-3 agile_offer_grid">
+              <div class="agileits_w3layouts_offer_grid">
+                  <div class="agile_offer_grid_pos">
+                      <p>05</p>
+                  </div>
+              </div>
+              <div class="wthree_offer_grid1">
+                  <h4>5.Aroma Therapy</h4>
+                  <p class="w3_agileits_service_para">Praesent nec blandit lorem.</p>
+              </div>
+          </div>
+          <div class="col-md-3 agile_offer_grid">
+              <div class="agileits_w3layouts_offer_grid">
+                  <div class="agile_offer_grid_pos">
+                      <p>06</p>
+                  </div>
+              </div>
+              <div class="wthree_offer_grid1">
+                  <h4>6.Other services</h4>
+                  <p class="w3_agileits_service_para">Praesent nec blandit lorem.</p>
+              </div>
+          </div>
+          <div class="clearfix"> </div>
+      </div>
+      
+  </div>
+</div> -->
+<!-- //services -->
+<!-- team -->
+
+<!-- //team -->
+<!--News-->
+<div class="news" id="news">
+  <div class="container">
+  <div class="title-main-w3ls">
+      <h3 class="title-w3-agile"><span>L</span>atest <span>N</span>ews</h3>
+  </div>
+  <div class="classes_wrapper">
+   <div class="row class_box">
+     <div class="col-md-6 classes-grid-w3ls">
+      <div class="class_right">
+          <h3><a href="#" data-toggle="modal" data-target="#myModal1">Consectetur<br><span>Lorem Ipsum</span></a></h3>
+          <p class="w3_agileits_para">Aliquam in dolor eu ipsum elementum auctor vitae eget felis.</p>
+          <a href="/booking" class="find-about" data-toggle="modal" data-target="#myModal1">Find out more</a>
+      </div>
+      <div class="class_left img1">
+          <ul>
+              <li>25</li>
+              <li>Sep</li>
+              <li>2017</li>
+          </ul>
+      </div>
+      <div class="clearfix"></div>
+          </div>	
+     <div class="col-md-6 classes-grid-w3ls">
+      <div class="class_right">
+          <h3><a href="#" data-toggle="modal" data-target="#myModal4">quis sapien<br><span>Lorem Ipsum</span></a></h3>
+          <p class="w3_agileits_para">Brasov in dolor eu ipsum elementum auctor vitae eget felis.</p>
+          <a href="#" class="find-about" data-toggle="modal" data-target="#myModal4">Find out more</a>
+        </div>
+        
+      <div class="class_left img2">
+          <ul>
+              <li>11</li>
+              <li>Sep</li>
+              <li>2017</li>
+          </ul>
+      </div>
+      </div>
+    <div class="clearfix"></div>	
+   </div>	
+   <div class="classes_wrapper">
+      <div class="row class_box">
+        <div class="col-md-6 classes-grid-w3ls">
+         <div class="class_right">
+             <h3><a href="#" data-toggle="modal" data-target="#myModal1">Consectetur<br><span>Lorem Ipsum</span></a></h3>
+             <p class="w3_agileits_para">Cluj in dolor eu ipsum elementum auctor vitae eget felis.</p>
+             <a href="#" class="find-about" data-toggle="modal" data-target="#myModal1">Find out more</a>
+         </div>
+         <div class="class_left img1">
+             <ul>
+                 <li>25</li>
+                 <li>Sep</li>
+                 <li>2017</li>
+             </ul>
+         </div>
+         <div class="clearfix"></div>
+             </div>	
+        <div class="col-md-6 classes-grid-w3ls">
+         <div class="class_right">
+             <h3><a href="#" data-toggle="modal" data-target="#myModal4">quis sapien<br><span>Lorem Ipsum</span></a></h3>
+             <p class="w3_agileits_para">Sibiu in dolor eu ipsum elementum auctor vitae eget felis.</p>
+             <a href="#" class="find-about" data-toggle="modal" data-target="#myModal4">Find out more</a>
+           </div>
+           
+         <div class="class_left img2">
+             <ul>
+                 <li>11</li>
+                 <li>Sep</li>
+                 <li>2017</li>
+             </ul>
+         </div>
+         </div>
+       <div class="clearfix"></div>	
+      </div>	
+   <div class="row class_box">
+      <div class="col-md-6 classes-grid-w3ls">
+      <div class="class_right">
+          <h3><a href="#" data-toggle="modal" data-target="#myModal5">vitae nisi<br><span>Lorem Ipsum</span></a></h3>
+          <p class="w3_agileits_para">Bucuresti in dolor eu ipsum elementum auctor vitae eget felis.</p>
+          <a href="#" class="find-about" data-toggle="modal" data-target="#myModal5">Find out more</a>
+      </div>
+      <div class="class_left img3">
+          <ul>
+              <li>25</li>
+              <li>Aug</li>
+              <li>2017</li>
+          </ul>
+      </div>
+      <div class="clearfix"></div>
+    </div>	
+     <div class="col-md-6 classes-grid-w3ls client-last-agileits">
+      <div class="class_right">
+          <h3><a href="#" data-toggle="modal" data-target="#myModal6">Aliquam in<br><span>Lorem Ipsum</span></a></h3>
+          <p class="w3_agileits_para">Brasov in dolor eu ipsum elementum auctor vitae eget felis.</p>
+          <a href="#" class="find-about" data-toggle="modal" data-target="#myModal6">Find out more</a>
+       </div>
+      <div class="class_left img4">
+          <ul>
+              <li>02</li>
+              <li>Jul</li>
+              <li>2017</li>
+          </ul>
+      </div>
+      </div>
+     <div class="clearfix"></div>
+   </div>	
+  <div class="clearfix-fix"></div> 	   		
+ </div>
+</div>
+</div>
+
+<!--//News-->
+<!-- Modal1 -->
+                  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+                      <div class="modal-dialog">
+                      <!-- Modal content-->
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4>Spa Sublime</h4>
+                                  <img src="assets/images/modal1.jpg" alt=" " class="img-responsive">
+                                  <h5>Quis nostrum exercitationem</h5>
+                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+<!-- //Modal1 -->
+<!-- Modal4 -->
+                  <div class="modal fade" id="myModal4" tabindex="-1" role="dialog">
+                      <div class="modal-dialog">
+                      <!-- Modal content-->
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4>Spa Sublime</h4>
+                                  <img src="assets/images/modal2.jpg" alt=" " class="img-responsive">
+                                  <h5>Quis nostrum exercitationem</h5>
+                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+<!-- //Modal4 -->
+<!-- Modal5 -->
+                  <div class="modal fade" id="myModal5" tabindex="-1" role="dialog">
+                      <div class="modal-dialog">
+                      <!-- Modal content-->
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4>Spa Sublime</h4>
+                                  <img src="assets/images/modal3.jpg" alt=" " class="img-responsive">
+                                  <h5>Quis nostrum exercitationem</h5>
+                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+<!-- //Modal5 -->
+<!-- Modal6 -->
+                  <div class="modal fade" id="myModal6" tabindex="-1" role="dialog">
+                      <div class="modal-dialog">
+                      <!-- Modal content-->
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4>Spa Sublime</h4>
+                                  <img src="assets/images/modal4.jpg" alt=" " class="img-responsive">
+                                  <h5>Quis nostrum exercitationem</h5>
+                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+<!-- //Modal6 -->
+<!-- Modal7 -->
+                  <div class="modal fade" id="myModal7" tabindex="-1" role="dialog">
+                      <div class="modal-dialog">
+                      <!-- Modal content-->
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4>Spa Sublime</h4>
+                                  <img src="assets/images/bann.jpg" alt=" " class="img-responsive">
+                                  <h5>Dedicated to inspiring Life in Balance.</h5>
+                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+<!-- //Modal7 -->
+<!-- Gallery -->
+<!-- Gallery -->
+<div id="gallery" class="gallery">  
+  <div class="container">
+      <div class="title-main-w3ls">
+          <h3 class="title-w3-agile"><span>T</span>reatments & <span>S</span>ervices</h3>
+      </div>
+  </div>
+  <div class="agileinfo-gallery-row">
+      <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+          <a href="assets/images/g1.jpg" class="imghvr-hinge-right figure">
+              <img src="assets/images/g1.jpg" alt="" title="Spa Sublime Image"/> 
+              <div class="agile-figcaption">
+              <h4>Spa Sublime</h4>
+                  <p>Wide variety of wellness treatments</p>
+              </div>
+          </a> 
+      </div> 
+      <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+          <a href="assets/images/g2.jpg" class="imghvr-hinge-right figure">
+              <img src="assets/images/g2.jpg" alt="" title="Spa Sublime Image"/> 
+              <div class="agile-figcaption">
+              <h4>Spa Sublime</h4>
+                 <p>Wide variety of wellness treatments</p>
+              </div>
+          </a> 
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+          <a href="assets/images/g3.jpg" class="imghvr-hinge-right figure">
+              <img src="assets/images/g3.jpg" alt="" title="Spa Sublime Image"/> 
+              <div class="agile-figcaption">
+              <h4>Spa Sublime</h4>
+                 <p>Wide variety of wellness treatments</p>
+              </div>
+          </a> 
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+          <a href="assets/images/g4.jpg" class="imghvr-hinge-right figure">
+              <img src="assets/images/g4.jpg" alt="" title="Spa Sublime Image"/> 
+              <div class="agile-figcaption">
+              <h4>Spa Sublime</h4>
+                 <p>Wide variety of wellness treatments</p>
+              </div>
+          </a> 
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+          <a href="assets/images/g5.jpg" class="imghvr-hinge-right figure">
+              <img src="assets/images/g5.jpg" alt="" title="Spa Sublime Image"/> 
+              <div class="agile-figcaption">
+              <h4>Spa Sublime</h4>
+                 <p>Wide variety of wellness treatments</p>
+              </div>
+          </a> 
+      </div> 
+      <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+          <a href="assets/images/g6.jpg" class="imghvr-hinge-right figure">
+              <img src="assets/images/g6.jpg" alt="" title="Spa Sublime Image"/> 
+              <div class="agile-figcaption">
+              <h4>Spa Sublime</h4>
+                <p>Wide variety of wellness treatments</p>
+              </div>
+          </a> 
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+          <a href="assets/images/g7.jpg" class="imghvr-hinge-right figure">
+              <img src="assets/images/g7.jpg" alt="" title="Spa Sublime Image"/> 
+              <div class="agile-figcaption">
+              <h4>Spa Sublime</h4>
+                  <p>Wide variety of wellness treatments</p>
+              </div>
+          </a> 
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+          <a href="assets/images/g8.jpg" class="imghvr-hinge-right figure">
+              <img src="assets/images/g8.jpg" alt="" title="Spa Sublime Image"/> 
+              <div class="agile-figcaption">
+              <h4>Spa Sublime</h4>
+                 <p>Wide variety of wellness treatments</p>
+              </div>
+          </a> 
+      </div>
+      <div class="clearfix"> </div>
+      
+  </div> 
+</div>
+<!-- //Gallery -->
+<!-- testimonials -->
+<div class="testimonials">
+  <div class="container">
+  <div class="title-main-w3ls">
+          <h3 class="title-w3-agile"><span>C</span>ustomers <span>S</span>ays</h3>
+      </div>
+      <div class="w3_agileits_testimonial_grids">
+          <section class="slider">
+              <div class="flexslider">
+                  <ul class="slides">
+                      <li>
+                          <div class="w3_agileits_testimonial_grid">
+                              <div class="test-bg-w3ls">
+                                  <h4>Ema Wayans <span>Lorem Ipsum</span></h4>
+                                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                                  dolore eu fugiat nulla pariatur.</p>
+                              </div>
+                              <img src="assets/images/t1.jpg" alt=" " class="img-responsive" />
+                              
+                          </div>
+                      </li>
+                      <li>
+                          <div class="w3_agileits_testimonial_grid">
+                              <div class="test-bg-w3ls">
+                                  <h4>Mark Rosy <span>Lorem Ipsum</span></h4>
+                                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                                  dolore eu fugiat nulla pariatur.</p>
+                              </div>
+                              <img src="assets/images/t2.jpg" alt=" " class="img-responsive" />
+                          </div>
+                      </li>
+                      <li>
+                          <div class="w3_agileits_testimonial_grid">
+                              <div class="test-bg-w3ls">
+                                  <h4>Mario Andretti <span>Lorem Ipsum</span></h4>
+                                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                                  dolore eu fugiat nulla pariatur.</p>
+                              </div>
+                              <img src="assets/images/t3.jpg" alt=" " class="img-responsive" />
+                              
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </section>
+      </div>
+  </div>
+</div>
+<!-- //testimonials -->
+<!-- contact -->
+<div id="contact" class="contact">
+  <div class="container">
+      <div class="title-main-w3ls">
+          <h3 class="title-w3-agile"><span>C</span>ontact <span>U</span>s</h3>
+      </div>
+      <div class="contact-info">
+          <ul>
+              <li><i class="material-icons" aria-hidden="true">
+                  <span class="material-icons"> home</span> </i>
+                  <h5>Address<span>Aegertweg 4, 8305, Switzerland</span></h5>
+              </li>
+              <li><i aria-hidden="true">
+                  <span class="material-icons">phone</span></i>
+                   <h5>Call Us<span>+1 (100)222-0-33</span></h5>
+              </li>
+              <li><i aria-hidden="true">
+                  <span class="material-icons">email</span></i>
+                  <h5>Mail Us<span><a href="mailto:info@example.com">info@example.com</a></span></h5>
+              </li>
+          </ul>
+      </div>
+      <div class="contact-w3ls-row">
+          <form action="#" method="post">
+              <div class="col-md-5 col-sm-5 contact-right agileits-w3layouts">
+                  <textarea name="Message" placeholder="Message" required=""></textarea>
+              </div>
+              <div class="col-md-7 col-sm-7 contact-left agileits-w3layouts">
+                  <input type="text" name="First Name" placeholder="First Name" required="">
+                  <input class="email" name="Last Name" type="text" placeholder="Last Name" required="">
+                  <input type="text" name="Number" placeholder="Mobile Number" required="">
+                  <input class="email" name="Email" type="email" placeholder="Email" required="">
+                  <input type="submit" value="SUBMIT">
+              </div> 
+              <div class="clearfix"> </div> 
+          </form>
+      </div>  
+  </div>
+</div>
+<!-- //contact -->
+<!-- Map -->
+<div class="map-w3-agile">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.008530322881!2d8.621557715686505!3d47.41177477917224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479075250b1e228f%3A0xa9f347199c63a87!2sSpandex+AG!5e0!3m2!1sen!2sin!4v1495014952061"></iframe>
+</div>
+<!-- //Map -->
+<!-- footer -->
