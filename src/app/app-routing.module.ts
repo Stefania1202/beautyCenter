@@ -15,11 +15,18 @@ import { PostEditComponent } from './modules/posts/post-edit/post-edit.component
 import { PostStartComponent } from './modules/posts/post-start/post-start.component';
 import { PostDetailComponent } from './modules/posts/post-detail/post-detail.component';
 import { SalonsComponent } from './modules/salons/salons.component';
+import { CalendarComponent } from './modules/calendar/calendar.component';
+import { SalonDetailComponent } from './components/salon/salon-detail/salon-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/auth', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'salon', component: SalonComponent },
+  { path: 'salon', component: SalonComponent
+  // , children: [
+  //   { path: ':id', component: SalonDetailComponent },
+  // ]
+  },
+  { path: 'salon/:id', component: SalonDetailComponent },
   {path: 'booking', component: BookingComponent},
   { path: 'profile', component: ProfileComponent },
   { path: 'auth', component: AuthComponent },
@@ -35,7 +42,8 @@ const routes: Routes = [
     ]
   },
     {path: 'map', component: MapComponent},
-    {path: 'salons', component: SalonsComponent}
+    {path: 'salons', component: SalonsComponent},
+    {path: 'calendar', component: CalendarComponent}
 
   // , {
   //   path: 'posts/post-edit',

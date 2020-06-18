@@ -11,7 +11,7 @@
                           <div class="col-md-3">
                               <div class="form-group">
                                   <span class="form-label">Location</span>
-                                  <input class="form-control" type="text" placeholder="Country, ZIP, city...">
+                                  <input class="form-control" type="text" name="searchSalon" [(ngModel)]= "searchSalon" placeholder="Country, ZIP, city...">
                               </div>
                           </div>
                           <div class="col-md-6">
@@ -123,199 +123,67 @@
   <div class="clearfix"> </div>
 
 </div>
-<!-- //about -->
-<!-- services -->
-<!-- <div class="services" id="services">
-  <div class="container">
-  <div class="title-main-w3ls">
-      <h3 class="title-w3-agile"><span>I</span>ncredible <span>S</span>ervices</h3>
-  </div>
-      <div class="w3ls_banner_bottom_grids">
-          <div class="col-md-3 agile_offer_grid">
-              <div class="agileits_w3layouts_offer_grid">
-                  <div class="agile_offer_grid_pos">
-                      <p>01</p>
-                  </div>
-              </div>
-              <div class="wthree_offer_grid1">
-                  <h4>1.Supreme Teamwork</h4>
-                  <p class="w3_agileits_service_para">Praesent nec blandit lorem.</p>
-              </div>
-          </div>
-          
-          <div class="col-md-3 agile_offer_grid">
-              <div class="agileits_w3layouts_offer_grid">
-                  <div class="agile_offer_grid_pos">
-                      <p>02</p>
-                  </div>
-              </div>
-              <div class="wthree_offer_grid1">
-                  <h4>2.Massage Rituals</h4>
-                  <p class="w3_agileits_service_para">Praesent nec blandit lorem.</p>
-              </div>
-          </div>
-          <div class="col-md-3 agile_offer_grid">
-              <div class="agileits_w3layouts_offer_grid">
-                  <div class="agile_offer_grid_pos">
-                      <p>03</p>
-                  </div>
-              </div>
-              <div class="wthree_offer_grid1">
-                  <h4>3.Body Treatments</h4>
-                  <p class="w3_agileits_service_para">Praesent nec blandit lorem.</p>
-              </div>
-          </div>
-          <div class="col-md-3 agile_offer_grid">
-              <div class="agileits_w3layouts_offer_grid">
-                  <div class="agile_offer_grid_pos">
-                      <p>04</p>
-                  </div>
-              </div>
-              <div class="wthree_offer_grid1">
-                  <h4>4.Oil Massage</h4>
-                  <p class="w3_agileits_service_para">Praesent nec blandit lorem.</p>
-              </div>
-          </div>
-          <div class="col-md-3 agile_offer_grid">
-              <div class="agileits_w3layouts_offer_grid">
-                  <div class="agile_offer_grid_pos">
-                      <p>05</p>
-                  </div>
-              </div>
-              <div class="wthree_offer_grid1">
-                  <h4>5.Aroma Therapy</h4>
-                  <p class="w3_agileits_service_para">Praesent nec blandit lorem.</p>
-              </div>
-          </div>
-          <div class="col-md-3 agile_offer_grid">
-              <div class="agileits_w3layouts_offer_grid">
-                  <div class="agile_offer_grid_pos">
-                      <p>06</p>
-                  </div>
-              </div>
-              <div class="wthree_offer_grid1">
-                  <h4>6.Other services</h4>
-                  <p class="w3_agileits_service_para">Praesent nec blandit lorem.</p>
-              </div>
-          </div>
-          <div class="clearfix"> </div>
-      </div>
-      
-  </div>
-</div> -->
-<!-- //services -->
-<!-- team -->
 
-<!-- //team -->
-<!--News-->
-<div class="news" id="news">
-  <div class="container">
-  <div class="title-main-w3ls">
-      <h3 class="title-w3-agile"><span>L</span>atest <span>N</span>ews</h3>
-  </div>
-  <div class="classes_wrapper">
-   <div class="row class_box">
-     <div class="col-md-6 classes-grid-w3ls">
-      <div class="class_right">
-          <h3><a href="#" data-toggle="modal" data-target="#myModal1">Consectetur<br><span>Lorem Ipsum</span></a></h3>
-          <p class="w3_agileits_para">Aliquam in dolor eu ipsum elementum auctor vitae eget felis.</p>
-          <a href="/booking" class="find-about" data-toggle="modal" data-target="#myModal1">Find out more</a>
-      </div>
-      <div class="class_left img1">
-          <ul>
-              <li>25</li>
-              <li>Sep</li>
-              <li>2017</li>
-          </ul>
-      </div>
-      <div class="clearfix"></div>
-          </div>	
-     <div class="col-md-6 classes-grid-w3ls">
-      <div class="class_right">
-          <h3><a href="#" data-toggle="modal" data-target="#myModal4">quis sapien<br><span>Lorem Ipsum</span></a></h3>
-          <p class="w3_agileits_para">Brasov in dolor eu ipsum elementum auctor vitae eget felis.</p>
-          <a href="#" class="find-about" data-toggle="modal" data-target="#myModal4">Find out more</a>
+<div class="news" id="news" >
+    <div class="container">
+    <div class="title-main-w3ls my-3">
+        <h3 class="title-w3-agile"><span>D</span>iscover <span>S</span>alons</h3>
+    </div>
+    <div class="classes_wrapper" >
+     <div class="row class_box" >
+       <div class="row align-items-center my-2" *ngFor="let post of posts | search:searchSalon">
+        <a class="list-group-item">
+        <div class="class_right" >
+            <h3><a href="#" data-toggle="modal" data-target="#myModal1">Brasov<br><span>{{ post.name }}</span></a></h3>
+            <p class="w3_agileits_para">{{ post.description }}</p>
+            <a routerLink="/salon-detail" class="find-about" >Find out more</a>
         </div>
-        
-      <div class="class_left img2">
-          <ul>
-              <li>11</li>
-              <li>Sep</li>
-              <li>2017</li>
-          </ul>
-      </div>
-      </div>
-    <div class="clearfix"></div>	
-   </div>	
-   <div class="classes_wrapper">
-      <div class="row class_box">
-        <div class="col-md-6 classes-grid-w3ls">
-         <div class="class_right">
-             <h3><a href="#" data-toggle="modal" data-target="#myModal1">Consectetur<br><span>Lorem Ipsum</span></a></h3>
-             <p class="w3_agileits_para">Cluj in dolor eu ipsum elementum auctor vitae eget felis.</p>
-             <a href="#" class="find-about" data-toggle="modal" data-target="#myModal1">Find out more</a>
+          <img class="class_left img1" [src]="post.imagePath"  alt="">
+        </a>
+        </div>
+        <div class="clearfix"></div>
+      </div>	
+      <div class="row class_box" >
+        <div class="row align-items-center my-2" >
+         <a class="list-group-item">
+         <div class="class_right" >
+             <h3><a href="#" data-toggle="modal" data-target="#myModal1">Brasov<br><span>Lady Salon</span></a></h3>
+             <p class="w3_agileits_para">Reusim sa creem o clipa de placere, intr-un loc prietenos, cald, cu o atmosfera relaxanta alaturi de o echipa de profesionisti, gata sa ofere sfaturi competente si cele mai noi tendinte in materie de infrumusetare.</p>
+             <a routerLink="/booking" class="find-about" >Find out more</a>
          </div>
-         <div class="class_left img1">
-             <ul>
-                 <li>25</li>
-                 <li>Sep</li>
-                 <li>2017</li>
-             </ul>
+         <img class="class_left img1 img-fluid rounded mb-4 mb-lg-0" src="assets/images/s.jpg"  alt="">
+         </a>
          </div>
          <div class="clearfix"></div>
-             </div>	
-        <div class="col-md-6 classes-grid-w3ls">
-         <div class="class_right">
-             <h3><a href="#" data-toggle="modal" data-target="#myModal4">quis sapien<br><span>Lorem Ipsum</span></a></h3>
-             <p class="w3_agileits_para">Sibiu in dolor eu ipsum elementum auctor vitae eget felis.</p>
-             <a href="#" class="find-about" data-toggle="modal" data-target="#myModal4">Find out more</a>
-           </div>
-           
-         <div class="class_left img2">
-             <ul>
-                 <li>11</li>
-                 <li>Sep</li>
-                 <li>2017</li>
-             </ul>
-         </div>
-         </div>
-       <div class="clearfix"></div>	
-      </div>	
-   <div class="row class_box">
-      <div class="col-md-6 classes-grid-w3ls">
-      <div class="class_right">
-          <h3><a href="#" data-toggle="modal" data-target="#myModal5">vitae nisi<br><span>Lorem Ipsum</span></a></h3>
-          <p class="w3_agileits_para">Bucuresti in dolor eu ipsum elementum auctor vitae eget felis.</p>
-          <a href="#" class="find-about" data-toggle="modal" data-target="#myModal5">Find out more</a>
-      </div>
-      <div class="class_left img3">
-          <ul>
-              <li>25</li>
-              <li>Aug</li>
-              <li>2017</li>
-          </ul>
-      </div>
-      <div class="clearfix"></div>
-    </div>	
-     <div class="col-md-6 classes-grid-w3ls client-last-agileits">
-      <div class="class_right">
-          <h3><a href="#" data-toggle="modal" data-target="#myModal6">Aliquam in<br><span>Lorem Ipsum</span></a></h3>
-          <p class="w3_agileits_para">Brasov in dolor eu ipsum elementum auctor vitae eget felis.</p>
-          <a href="#" class="find-about" data-toggle="modal" data-target="#myModal6">Find out more</a>
        </div>
-      <div class="class_left img4">
-          <ul>
-              <li>02</li>
-              <li>Jul</li>
-              <li>2017</li>
-          </ul>
-      </div>
-      </div>
-     <div class="clearfix"></div>
-   </div>	
-  <div class="clearfix-fix"></div> 	   		
- </div>
-</div>
+       <div class="row class_box" >
+        <div class="row align-items-center my-2" >
+         <a class="list-group-item">
+         <div class="class_right" >
+             <h3><a href="#" data-toggle="modal" data-target="#myModal1">Brasov<br><span>Maris Salon</span></a></h3>
+             <p class="w3_agileits_para">Reusim sa creem o clipa de placere, intr-un loc prietenos, cald, cu o atmosfera relaxanta alaturi de o echipa de profesionisti, gata sa ofere sfaturi competente si cele mai noi tendinte in materie de infrumusetare.</p>
+             <a routerLink="/booking" class="find-about" >Find out more</a>
+         </div>
+         <img class="class_left img1 img-fluid rounded mb-4 mb-lg-0" src="assets/images/s.jpg"  alt="">
+         </a>
+         </div>
+         <div class="clearfix"></div>
+       </div>
+       <div class="row class_box" >
+        <div class="row align-items-center my-2" >
+         <a class="list-group-item">
+         <div class="class_right" >
+             <h3><a href="#" data-toggle="modal" data-target="#myModal1">Brasov<br><span>Toulouse Salon</span></a></h3>
+             <p class="w3_agileits_para">Reusim sa creem o clipa de placere, intr-un loc prietenos, cald, cu o atmosfera relaxanta alaturi de o echipa de profesionisti, gata sa ofere sfaturi competente si cele mai noi tendinte in materie de infrumusetare.</p>
+             <a routerLink="/booking" class="find-about" >Find out more</a>
+         </div>
+         <img class="class_left img1 img-fluid rounded mb-4 mb-lg-0" src="assets/images/s.jpg"  alt="">
+         </a>
+         </div>
+         <div class="clearfix"></div>
+       </div>
+    </div>
+    </div>
 </div>
 
 <!--//News-->

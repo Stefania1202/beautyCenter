@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatDividerModule, MatToolbarModule, MatIconModule, MatButtonModule, MatMenuModule, MatListModule,
   MatTabsModule} from '@angular/material';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FlatpickrModule } from 'angularx-flatpickr';
@@ -11,7 +12,8 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
-
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,6 +31,10 @@ import { SalonDetailComponent } from './components/salon/salon-detail/salon-deta
 import { SalonListComponent } from './components/salon/salon-list/salon-list.component';
 import { SalonItemComponent } from './components/salon/salon-list/salon-item/salon-item.component';
 import { SalonsService } from './components/salon/salons.service';
+import { CalendarComponent } from './modules/calendar/calendar.component';
+import { HomeListComponent } from './components/home/home-list/home-list.component';
+import { HomeItemComponent } from './components/home/home-list/home-item/home-item.component';
+import { SearchPipe } from './components/salon/search.pipe';
 // import { PostService } from './modules/posts/post.service';
 
 
@@ -46,7 +52,11 @@ import { SalonsService } from './components/salon/salons.service';
     SalonComponent,
     SalonDetailComponent,
     SalonListComponent,
-    SalonItemComponent
+    SalonItemComponent,
+    CalendarComponent,
+    HomeListComponent,
+    HomeItemComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
@@ -60,6 +70,7 @@ import { SalonsService } from './components/salon/salons.service';
     MatMenuModule,
     MatListModule,
     MatTabsModule,
+    MatAutocompleteModule,
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
@@ -70,7 +81,12 @@ import { SalonsService } from './components/salon/salons.service';
     }),
     AngularFireModule.initializeApp(environment.firebaseConfig, 'MyApp'),
     AngularFirestoreModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    Ng2SearchPipeModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAvQ71kUw9POGSLY63reLDopsHR4nWFkwo',
+      libraries: ['places']
+    })
   ],
   providers: [SalonsService],
   bootstrap: [AppComponent]

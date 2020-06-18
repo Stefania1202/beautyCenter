@@ -1,0 +1,45 @@
+<div class="container" >
+  <div class="row">
+      <div class="col-md-8">
+        <h1 class="my-4">View
+          <small>My booking</small>
+        </h1><br><br><br>
+  <div class="col-lg-12 mb-12">
+    <div class="card h-100">
+      <h4 class="card-header">Booking Clients</h4>
+      <div class="card-body" style="background-image: url(https://thumbs.dreamstime.com/b/beauty-salon-pink-work-tools-comb-hair-dress-coloring-stone-background-top-view-mock-up-beauty-salon-pink-work-99356077.jpg);">
+        <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Salon</th>    
+            <th>Date</th>
+            <th>Time</th>
+            <th>Service</th>
+            <th>City</th>
+          </tr>
+        </thead>
+      
+        <tbody>
+          <tr *ngFor="let salon of loadedSalon">
+            <td>
+              {{salon.place}}
+            </td>
+            <td>
+              {{salon.start | date}}
+            </td>   
+            <td>
+              {{salon.time}}
+            </td>  
+            <td>
+              {{salon.service}}
+            </td> 
+            <td>
+              {{salon.city}}
+            </td>   
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</div>

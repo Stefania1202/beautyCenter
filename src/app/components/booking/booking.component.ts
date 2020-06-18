@@ -23,6 +23,7 @@ import {
   CalendarView,
 } from 'angular-calendar';
 import { HttpClient } from '@angular/common/http';
+import { map } from 'rxjs/operators';
 
 const colors: any = {
   red: {
@@ -83,7 +84,7 @@ export class BookingComponent {
     {
       start: subDays(startOfDay(new Date()), 1),
       end: addDays(new Date(), 1),
-      title: 'A 3 day event',
+      title: '',
       color: colors.red,
       actions: this.actions,
       allDay: true,
@@ -92,37 +93,21 @@ export class BookingComponent {
         afterEnd: true,
       },
       draggable: true,
-    },
-    {
-      start: startOfDay(new Date()),
-      title: 'An event with no end date',
-      color: colors.yellow,
-      actions: this.actions,
-    },
-    {
-      start: subDays(endOfMonth(new Date()), 3),
-      end: addDays(endOfMonth(new Date()), 3),
-      title: 'A long event that spans 2 months',
-      color: colors.blue,
-      allDay: true,
-    },
-    {
-      start: addHours(startOfDay(new Date()), 2),
-      end: addHours(new Date(), 2),
-      title: 'A draggable and resizable event',
-      color: colors.yellow,
-      actions: this.actions,
-      resizable: {
-        beforeStart: true,
-        afterEnd: true,
-      },
-      draggable: true,
-    },
+    }
   ];
 
   activeDayIsOpen: boolean = true;
 
   constructor(private modal: NgbModal, private http: HttpClient) {}
+
+  ngOnInit() {
+    this.onFetchEvents();
+  }
+
+  onFetchEvents() {
+    // Send Http request
+    this.fetchEvents();
+  }
 
   dayClicked({ date, events }: { date: Date; events: CalendarEvent[] }): void {
     if (isSameMonth(date, this.viewDate)) {
@@ -182,6 +167,26 @@ export class BookingComponent {
     this.http.put('https://proiectfinal-b9af1.firebaseio.com/event.json', this.events).subscribe( response => {
             console.log(response);
         });
+  }
+
+  private fetchEvents() {
+    this.http
+      .get('https://proiectfinal-b9af1.firebaseio.com/event.json')
+      .pipe(
+        map(responseData => {
+          const eventsArray = [];
+          for (const key in responseData) {
+            if (responseData.hasOwnProperty(key)) {
+              eventsArray.push({ ...responseData[key], id: key });
+            }
+          }
+          return eventsArray;
+        })
+      )
+      .subscribe(events => {
+        // ...
+        console.log(events);
+      });
   }
 
   deleteEvent(eventToDelete: CalendarEvent) {

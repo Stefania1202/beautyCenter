@@ -9,19 +9,19 @@ export class DashboardService {
 
   bigChart() {
     return [{
-      name: 'Asia',
+      name: 'Brasov',
       data: [502, 635, 809, 947, 1402, 3634, 5268]
     }, {
-      name: 'Africa',
+      name: 'Bucuresti',
       data: [106, 107, 111, 133, 221, 767, 1766]
     }, {
-      name: 'Europe',
+      name: 'Cluj',
       data: [163, 203, 276, 408, 547, 729, 628]
     }, {
-      name: 'America',
+      name: 'Timisoara',
       data: [18, 31, 54, 156, 339, 818, 1201]
     }, {
-      name: 'Oceania',
+      name: 'Constanta',
       data: [2, 2, 2, 6, 13, 30, 46]
     }];
   }

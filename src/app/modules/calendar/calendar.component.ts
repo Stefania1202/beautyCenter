@@ -1,18 +1,20 @@
-import { Component, OnInit} from '@angular/core';
+import {
+  Component,
+  OnInit,
+} from '@angular/core';
 import { Subscription } from 'rxjs';
-import { Post } from 'src/app/modules/posts/post.model';
 import { Salon } from 'src/app/components/salon/salon-detail/salon.model';
-import { PostService } from 'src/app/modules/posts/post.service';
-import { ActivatedRoute, Params } from '@angular/router';
+import { Params, ActivatedRoute } from '@angular/router';
+import { PostService } from '../posts/post.service';
 import { SalonService } from 'src/app/components/salon/salon-detail/salon.service';
-
+import { Post } from '../posts/post.model';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css']
+  selector: 'app-calendar',
+  templateUrl: './calendar.component.html',
+  styleUrls: ['./calendar.component.css']
 })
-export class ProfileComponent implements OnInit {
+export class CalendarComponent  implements OnInit {
   post: Post;
   id: number;
   posts: Post[];
@@ -54,7 +56,7 @@ export class ProfileComponent implements OnInit {
 
 
 onCreateEvent(postData: Salon) {
-  this.salonService.SaveEvent( postData.place, postData.start, postData.time, postData.service, postData.city);
+  this.salonService.SaveEvent( postData.place, postData.start, postData.time, postData.service, postData.city );
 }
 
   onFetchEvent() {
@@ -71,4 +73,5 @@ onCreateEvent(postData: Salon) {
     }
     );
   }
+
 }

@@ -18,8 +18,8 @@ export class DataStorageService {
     }
 
     fetchPosts() {
-        this.http.get<Post[]>('https://proiectfinal-b9af1.firebaseio.com/post.json').subscribe(posts =>{
+        this.http.get<Post[]>('https://proiectfinal-b9af1.firebaseio.com/post.json').subscribe(posts => {
             this.postService.setPosts(posts);
-        })
+        });
     }
 }

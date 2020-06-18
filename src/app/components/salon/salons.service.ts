@@ -10,6 +10,7 @@ export class SalonsService {
 
       ];
 
+
     getSalons() {
         return this.salon.slice();
     }

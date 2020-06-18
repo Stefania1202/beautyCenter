@@ -40,7 +40,7 @@ export class AuthComponent {
     authObs.subscribe(
       resData => {
         console.log(resData);
-        this.router.navigate(['/booking']);
+        this.router.navigate(['/profile']);
       },
       errorMessage => {
         console.log(errorMessage);

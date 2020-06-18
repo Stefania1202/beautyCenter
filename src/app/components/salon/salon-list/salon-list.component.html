@@ -1,99 +1,308 @@
-<div class="row">
-
-    <div class="col-lg-4 col-md-6 mb-4" *ngFor="let post of posts">
-        <div class="card h-100">
-          <a href="#" ><img class="card-img-top" [src]="post.imagePath" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="#" >{{ post.name }}</a>
-            </h4>
-            <h5>$24.99</h5>
-            <p class="card-text">{{ post.description }}</p>
+<!-- about -->
+<div class="banner-w3layouts">
+  <br> <br><br><br><br><br><br><br> <br><br><br><br>
+  <div id="booking" class="section">
+  <div class="section-center">
+      <div class="container">
+          <div class="row">
+              <div class="booking-form">
+                  <form>
+                      <div class="row no-margin">
+                          <div class="col-md-3">
+                              <div class="form-group">
+                                  <span class="form-label">Location</span>
+                                  <input class="form-control" type="text" name="searchSalon" [(ngModel)]="searchSalon" autocomplete="off" placeholder="Start searching for a salon">                              
+                                </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="row no-margin">
+                                  <div class="col-md-5">
+                                      <div class="form-group">
+                                          <span class="form-label">Name of salon</span>
+                                          <input class="form-control" type="text" name="searchSalon" [(ngModel)]="searchSalon" autocomplete="off" placeholder="Start searching for a salon">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-5" >
+                                      <div class="form-group">
+                                          <span class="form-label">Date</span>
+                                          <input class="form-control" type="date" required>
+                                      </div>
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="form-btn">
+                                  <button class="submit-btn">Check availability</button>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-          </div>
-        </div>
       </div>
-
-    <div class="col-lg-4 col-md-6 mb-4" *ngFor="let salons of salon">
-      <div class="card h-100">
-        <a href="#" ><img class="card-img-top" [src]="post.imagePath" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">{{ post.name }}</a>
-          </h4>
-          <h5>$24.99</h5>
-          <p class="card-text">{{ post.description }}</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="assets/images/img3.jpg" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Item Three</a>
-          </h4>
-          <h5>$24.99</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="assets/images/img4.jpg" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Item Four</a>
-          </h4>
-          <h5>$24.99</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="assets/images/img5.jpg" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Item Five</a>
-          </h4>
-          <h5>$24.99</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="assets/images/img6.jpg" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Item Six</a>
-          </h4>
-          <h5>$24.99</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-        </div>
-      </div>
-    </div>
-
   </div>
+  </div>
+</div>
+
+
+
+
+<div class="about" id="about">
+<div class="container">
+  <div class="about-top-agileits-w3layouts">
+      <div class="col-md-4 about-left-w3-agileits">
+          <div class="title-main-w3ls">
+              <h3 class="title-w3-agile"><span>D</span>espre <span>N</span>oi</h3>
+          </div>
+      </div>
+      <div class="col-md-8 about-right-w3-agileits">
+          <h3>Fă alegerea corectă</h3>
+          <p class="w3_agileits_para">Vă pferim servicii de înaltă calitate. Acestă aplicație a fost creată pentru a veni în ajutorul tău. Printre serviciile oferite se regăsesc rezarvarea anumitor saloanele preferate și tehnici de întreținere, fără a mai fi nevoie de căutări îndelungate pe internet sau apeluri nesfârșite. Navighează și vezi ce ți se potrivește</p>
+      </div>
+      <div class="clearfix"> </div>
+  </div>
+</div>
+  <div class="col-md-4 about-bottoml-agileits">
+  </div>
+  <div class="col-md-8 about-bottomr-agileits">
+      <div class="title-main-w3ls">
+          <h3 class="title-w3-agile"><span>R</span>ezervă <span>S</span>erviciile <span>D</span>orite </h3>
+      </div>
+          <div class="form-agileits">
+          <form #postForm="ngForm" (ngSubmit)="onCreateBooking(postForm.value)" method="post">
+              <h6>Salon and date</h6>
+                  <select class="form-control name">
+                    <input class="name" type="text" id="salonName" name="salonName" placeholder="Please Select Your Service" required ngModel
+                    
+                    >
+                      <option>Please Select Your Service</option>
+                      <option>Test1</option>
+                      <option>Test2</option>
+                      <option>Test3</option>
+                      <option>Relax Day (for two $399.00)</option>
+                  </select>
+                  <input  id="datepicker1" name="date" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" placeholder="mm/dd/yyyy" required ngModel
+                  >
+              <div class="clearfix"> </div>
+              <h6>Personal information</h6>
+                  <input class="name" type="text" id="clientName" name="clientName" placeholder="First Name" required ngModel
+                  >
+                  <!-- <input type="text" name="Last Name" placeholder="Last Name" required=""> -->
+                  <input class="name" type="email" id="email" name="email" placeholder="Email" required ngModel
+                  >
+                  <input type="text" name="phone" id="phone" placeholder="Phone" required ngModel
+                  >
+                  <div class="clearfix"> </div>
+                  <div class="wthree-text"> 
+                      <ul> 
+                          <li>
+                              <label class="anim">
+                                  <input type="checkbox" class="checkbox">
+                                  <span> Please send me latest news & updates</span> 
+                              </label> 
+                          </li>
+                      </ul>
+                      <div class="clearfix"> </div>
+                  </div>
+                  <input type="submit" value="Submit">
+          </form>
+          </div>
+          <!-- <img src="assets/images/about.png" alt=" " class="img-responsive" /> -->
+  </div>
+  <div class="clearfix"> </div>
+
+</div>
+
+<div class="news" id="news" >
+    <div class="container">
+    <div class="title-main-w3ls my-3">
+        <h3 class="title-w3-agile"><span>D</span>iscover <span>S</span>alons</h3>
+    </div>
+    <div class="classes_wrapper" >
+      <app-salon-item
+      *ngFor="let post of posts | search: searchSalon; let i = index"
+      [post] = "post"
+      [index] = "i"></app-salon-item>
+   </div>
+  </div>
+  </div>
+
+<!-- Gallery -->
+<div id="gallery" class="gallery">  
+  <div class="container">
+      <div class="title-main-w3ls">
+          <h3 class="title-w3-agile"><span>T</span>reatments & <span>S</span>ervices</h3>
+      </div>
+  </div>
+  <div class="agileinfo-gallery-row">
+      <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+          <a href="assets/images/g1.jpg" class="imghvr-hinge-right figure">
+              <img src="assets/images/g1.jpg" alt="" title="Spa Sublime Image"/> 
+              <div class="agile-figcaption">
+              <h4>Spa Sublime</h4>
+                  <p>Wide variety of wellness treatments</p>
+              </div>
+          </a> 
+      </div> 
+      <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+          <a href="assets/images/g2.jpg" class="imghvr-hinge-right figure">
+              <img src="assets/images/g2.jpg" alt="" title="Spa Sublime Image"/> 
+              <div class="agile-figcaption">
+              <h4>Spa Sublime</h4>
+                 <p>Wide variety of wellness treatments</p>
+              </div>
+          </a> 
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+          <a href="assets/images/g3.jpg" class="imghvr-hinge-right figure">
+              <img src="assets/images/g3.jpg" alt="" title="Spa Sublime Image"/> 
+              <div class="agile-figcaption">
+              <h4>Spa Sublime</h4>
+                 <p>Wide variety of wellness treatments</p>
+              </div>
+          </a> 
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+          <a href="assets/images/g4.jpg" class="imghvr-hinge-right figure">
+              <img src="assets/images/g4.jpg" alt="" title="Spa Sublime Image"/> 
+              <div class="agile-figcaption">
+              <h4>Spa Sublime</h4>
+                 <p>Wide variety of wellness treatments</p>
+              </div>
+          </a> 
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+          <a href="assets/images/g5.jpg" class="imghvr-hinge-right figure">
+              <img src="assets/images/g5.jpg" alt="" title="Spa Sublime Image"/> 
+              <div class="agile-figcaption">
+              <h4>Spa Sublime</h4>
+                 <p>Wide variety of wellness treatments</p>
+              </div>
+          </a> 
+      </div> 
+      <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+          <a href="assets/images/g6.jpg" class="imghvr-hinge-right figure">
+              <img src="assets/images/g6.jpg" alt="" title="Spa Sublime Image"/> 
+              <div class="agile-figcaption">
+              <h4>Spa Sublime</h4>
+                <p>Wide variety of wellness treatments</p>
+              </div>
+          </a> 
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+          <a href="assets/images/g7.jpg" class="imghvr-hinge-right figure">
+              <img src="assets/images/g7.jpg" alt="" title="Spa Sublime Image"/> 
+              <div class="agile-figcaption">
+              <h4>Spa Sublime</h4>
+                  <p>Wide variety of wellness treatments</p>
+              </div>
+          </a> 
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+          <a href="assets/images/g8.jpg" class="imghvr-hinge-right figure">
+              <img src="assets/images/g8.jpg" alt="" title="Spa Sublime Image"/> 
+              <div class="agile-figcaption">
+              <h4>Spa Sublime</h4>
+                 <p>Wide variety of wellness treatments</p>
+              </div>
+          </a> 
+      </div>
+      <div class="clearfix"> </div>
+      
+  </div> 
+</div>
+<!-- //Gallery -->
+<!-- testimonials -->
+<div class="testimonials">
+  <div class="container">
+  <div class="title-main-w3ls">
+          <h3 class="title-w3-agile"><span>C</span>ustomers <span>S</span>ays</h3>
+      </div>
+      <div class="w3_agileits_testimonial_grids">
+          <section class="slider">
+              <div class="flexslider">
+                  <ul class="slides">
+                      <li>
+                          <div class="w3_agileits_testimonial_grid">
+                              <div class="test-bg-w3ls">
+                                  <h4>Ema Wayans <span>Lorem Ipsum</span></h4>
+                                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                                  dolore eu fugiat nulla pariatur.</p>
+                              </div>
+                              <img src="assets/images/t1.jpg" alt=" " class="img-responsive" />
+                              
+                          </div>
+                      </li>
+                      <li>
+                          <div class="w3_agileits_testimonial_grid">
+                              <div class="test-bg-w3ls">
+                                  <h4>Mark Rosy <span>Lorem Ipsum</span></h4>
+                                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                                  dolore eu fugiat nulla pariatur.</p>
+                              </div>
+                              <img src="assets/images/t2.jpg" alt=" " class="img-responsive" />
+                          </div>
+                      </li>
+                      <li>
+                          <div class="w3_agileits_testimonial_grid">
+                              <div class="test-bg-w3ls">
+                                  <h4>Mario Andretti <span>Lorem Ipsum</span></h4>
+                                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                                  dolore eu fugiat nulla pariatur.</p>
+                              </div>
+                              <img src="assets/images/t3.jpg" alt=" " class="img-responsive" />
+                              
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </section>
+      </div>
+  </div>
+</div>
+<!-- //testimonials -->
+<!-- contact -->
+<div id="contact" class="contact">
+  <div class="container">
+      <div class="title-main-w3ls">
+          <h3 class="title-w3-agile"><span>C</span>ontact <span>U</span>s</h3>
+      </div>
+      <div class="contact-info">
+          <ul>
+              <li><i class="material-icons" aria-hidden="true">
+                  <span class="material-icons"> home</span> </i>
+                  <h5>Address<span>Aegertweg 4, 8305, Switzerland</span></h5>
+              </li>
+              <li><i aria-hidden="true">
+                  <span class="material-icons">phone</span></i>
+                   <h5>Call Us<span>+1 (100)222-0-33</span></h5>
+              </li>
+              <li><i aria-hidden="true">
+                  <span class="material-icons">email</span></i>
+                  <h5>Mail Us<span><a href="mailto:info@example.com">info@example.com</a></span></h5>
+              </li>
+          </ul>
+      </div>
+      <div class="contact-w3ls-row">
+          <form  (ngSubmit)="onCreateComment(postForm.value)" method="post">
+              <div class="col-md-5 col-sm-5 contact-right agileits-w3layouts">
+                  <textarea name="message" placeholder="message" required=""></textarea>
+              </div>
+              <div class="col-md-7 col-sm-7 contact-left agileits-w3layouts">
+                  <input type="text" name="firstname" placeholder="firstname" required="">
+                  <input class="email" name="lastname" type="text" placeholder="lastname" required="">
+                  <input type="text" name="phone" placeholder="phone" required="">
+                  <input class="email" name="email" type="email" placeholder="email" required="">
+                  <input type="submit" value="SUBMIT">
+              </div> 
+              <div class="clearfix"> </div> 
+          </form>
+      </div>  
+  </div>
+</div>
+<!-- //contact -->
+<!-- Map -->
+<div class="map-w3-agile">
+<iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=45.6523093, 25.6102746&amp;q=Brasov%2C%20city%2C%20Bra%C8%99ov%2C%20Romania+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed"></iframe>
+</div>

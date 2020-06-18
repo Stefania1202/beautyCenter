@@ -22,7 +22,6 @@ export class PostsComponent implements OnInit {
         }
       );
     this.dataStoreService.fetchPosts();
-    
   }
 
 }

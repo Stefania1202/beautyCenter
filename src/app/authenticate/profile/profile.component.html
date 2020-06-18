@@ -4,13 +4,11 @@
         <div class="page-header-image" data-parallax="true" style="background-image: url('assets/images/s.jpg');"></div>
         <div class="container">
           <div class="content-center">
-            <div class="cc-profile-image"><a href="#"><img src="assets/images/anthony.jpg" alt="Image"/></a></div>
+            <div class="cc-profile-image"><a href="#"><img src="https://tse3.mm.bing.net/th?id=OIP.HCqEoTePa_etArC8-ORF9AHaHa&pid=Api&P=0&w=300&h=300" alt="Image"/></a></div>
             <div class="h2 title">Anthony Barnett</div>
-            <!-- <p class="category text-white">Web Developer, Graphic Designer,  Photographer</p> -->
             <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Booking</a>
           </div>
         </div>
-       
       </div>
     </div>
     </div>
@@ -21,11 +19,41 @@
           <div class="col-lg-6 col-md-12">
             <div class="card-body">
               <div class="title-main-w3ls">
-                <h3 class="title-w3-agile"><span>A</span>bout</h3>
+                <h3 class="title-w3-agile"><span>My</span>booking</h3>
             </div>
-              <p> Hello! I am Anthony Barnett. Web Developer, Graphic Designer and Photographer.</p>
-              <p>Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skills and experience. </p>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Salon name</th>
+                    <th>Starts at</th>
+                    <th>Time</th>
+                    <th>Service</th>
+                    <th>City</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let salon of loadedSalon">
+                    <td>
+                      {{salon.place}}
+                    </td>
+                    <td>
+                      {{salon.start | date}}
+                    </td>
+                    <td>
+                      {{salon.time}}
+                    </td>  
+                    <td>
+                      {{salon.service}}
+                    </td>
+                    <td>
+                      {{salon.city}}
+                    </td>   
+                  </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
           </div>
           <div class="col-lg-6 col-md-12">
             <div class="card-body">
@@ -38,7 +66,7 @@
               </div>
               <div class="row mt-3">
                 <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-                <div class="col-sm-8">anthony@company.com</div>
+                <div class="col-sm-8">anthony@yahoo.com</div>
               </div>
               <div class="row mt-3">
                 <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
@@ -46,11 +74,7 @@
               </div>
               <div class="row mt-3">
                 <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
-                <div class="col-sm-8">140, City Center, New York, U.S.A</div>
-              </div>
-              <div class="row mt-3">
-                <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
-                <div class="col-sm-8">English, German, French</div>
+                <div class="col-sm-8">Brasov</div>
               </div>
               <br>
             </div>

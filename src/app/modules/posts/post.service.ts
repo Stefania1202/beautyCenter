@@ -2,18 +2,11 @@ import { EventEmitter } from '@angular/core';
 import { Subject } from 'rxjs';
 
 import { Post } from './post.model';
-import { Salon } from '../salons/salon.model';
 
 export class PostService {
   postChanged = new Subject<Post[]>();
   postSelected = new EventEmitter<Post>();
-
-    // private posts: Post[] = [
-    // tslint:disable-next-line: max-line-length
-    //     new Post ('A test post', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!',
-    //     'https://beuhairsalon.com/wp-content/uploads/2017/09/beuhair-interior-3-min-cropped.jpg'),
-    //   ];
-      private posts: Post[] = [];
+  private posts: Post[] = [];
 
       setPosts(posts: Post[]) {
         this.posts = posts;

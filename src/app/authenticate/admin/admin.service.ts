@@ -85,7 +85,7 @@ export class AdminService {
             expirationDate
             );
            this.user.next(user);
-
+           console.log(userId);
       }
 
     private handleError(errorRes: HttpErrorResponse) {

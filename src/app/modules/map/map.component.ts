@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef, NgZone } from '@angular/core';
 import { MapsAPILoader, MouseEvent } from '@agm/core';
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-map',
@@ -81,5 +82,40 @@ export class MapComponent implements OnInit {
       }
     });
   }
+
+  // initMap(): Promise<any> {
+  //   this.mapsAPILoader
+  //   return new Promise((resolve) => {
+  //     this.geoCoder.getCurrentPosition().then((position) => {
+  //       this.latitude = position.coords.latitude;
+  //       this.longitude = position.coords.longitude;
+  // tslint:disable-next-line: max-line-length
+  //       this.geoCoder.geocode({ 'https://maps.googleapis.com/maps/api/geocode/json?address=Winnetka&key=AIzaSyAvQ71kUw9POGSLY63reLDopsHR4nWFkwo' :
+  //    { lat: this.latitude, lng: this.longitude } }, (results, status) => {
+  //     console.log(results);
+  //     console.log(status);
+  //     if (status === 'OK') {
+  //       if (results[0]) {
+  //         this.zoom = 12;
+  //         this.address = results[0].formatted_address;
+  //       } else {
+  //         window.alert('No results found');
+  //       }
+  //     } else {
+  //       window.alert('Geocoder failed due to: ' + status);
+  //     }
+  //   });
+  //     });
+  //   });
+  // }
+
+  // saveLocation(){
+  //   firebase.database().ref('https://proiectfinal-b9af1.firebaseio.com/post.json').update({
+  //     lat: this.latitude,
+  //     long: this.longitude
+  //   }).then(res => {
+  //     console.log(res);
+  //   });
+  // }
 
 }

@@ -25,9 +25,6 @@ export class AreaComponent implements OnInit {
       title: {
         text: 'Random DATA'
       },
-      subtitle: {
-        text: 'Demo'
-      },
       tooltip: {
         split: true,
         valueSuffix: ' millions'
