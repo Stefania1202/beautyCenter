@@ -1259,12 +1259,14 @@ figure.effect-layla:hover img,figure.effect-layla:hover ul {
 	min-height:257px;
 }
 .img1{
-	background: url(assets/images/n1.jpg)no-repeat 0px 0px;
+	
 	background-size:cover;
+	width: 70px;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
+
 }
 .img2{
 	background: url(assets/images/n2.jpg)no-repeat 0px 0px;
@@ -1315,7 +1317,7 @@ figure.effect-layla:hover img,figure.effect-layla:hover ul {
 }
 .class_left {
     width: 45.5%;
-    float: left;
+	float: left;
     position: relative;
 }
 .class_right {
@@ -5194,23 +5196,6 @@ h1 a.navbar-brand span {
     font-weight: 400;
     color: #fff;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   #navbar {
 	overflow: hidden;
 	background-color: #333;
