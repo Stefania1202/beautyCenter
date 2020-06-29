@@ -35,6 +35,7 @@ import { CalendarComponent } from './modules/calendar/calendar.component';
 import { HomeListComponent } from './components/home/home-list/home-list.component';
 import { HomeItemComponent } from './components/home/home-list/home-item/home-item.component';
 import { SearchPipe } from './components/salon/search.pipe';
+import { SearchhPipe } from './components/salon/searchh.pipe';
 // import { PostService } from './modules/posts/post.service';
 
 
@@ -56,7 +57,8 @@ import { SearchPipe } from './components/salon/search.pipe';
     CalendarComponent,
     HomeListComponent,
     HomeItemComponent,
-    SearchPipe
+    SearchPipe,
+    SearchhPipe,
   ],
   imports: [
     BrowserModule,

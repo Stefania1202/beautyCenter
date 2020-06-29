@@ -1,53 +1,40 @@
- <!-- Header -->
-<!-- about -->
 <div class="banner-w3layouts">
-    <br> <br><br><br><br><br><br><br> <br><br>
+    <br><br><br><br><br><br><br><br><br><br>
     <div id="booking" class="section" >
         <div class="container" style="background-color: rgba(253, 253, 253, 0.63)">
         <div class="row">
             <div class="col-md-8 mb-5" ><br>
                 <div class="title-main-w3ls">
-                    <h3 class="title-w3-agile"><span>A</span>bout<span>U</span>s</h3>
+                    <h3 class="title-w3-agile"><span>D</span>espre<span>N</span>oi</h3>
                 </div>
               <hr>
               <p>{{post.description}}</p>
-              <a href="#" class="find-about" data-toggle="modal" data-target="#myModal4">Find out more</a>
             </div>
             <div class="col-md-4 mb-5" ><br>
                 <div class="title-main-w3ls">
-                    <h3 class="title-w3-agile"><span>C</span>ontact<span>U</span>s</h3>
+                    <h3 class="title-w3-agile"><span>C</span>ontactează-ne</h3>
                 </div>
               <hr>
               <address>
                 {{post.location}}
-                
               </address>
               <address>
-                <abbr title="Phone">P:</abbr>
+                <abbr title="Telefon">P:</abbr>
                 (123) 456-7890
                 <br>
                 <abbr title="Email">E:</abbr>
-                <a href="mailto:#">name@example.com</a>
+                <a >name@example.com</a>
               </address>
-            </div>
           </div>
-          <!-- /.row -->
+        </div>
     </div>
-    </div>
+  </div>
 </div>
-
-  <!-- Page Content -->
-  <div class="container">
-
-<br><br>   
-
-
-
-
+<div class="container"><br><br>   
 <div id="gallery" class="gallery">  
     <div class="container">
         <div class="title-main-w3ls">
-            <h3 class="title-w3-agile"><span>T</span>reatments & <span>S</span>ervices</h3>
+            <h3 class="title-w3-agile"><span>T</span>ratamente și <span>S</span>ervicii</h3>
         </div>
     </div>
     <div class="agileinfo-gallery-row">
@@ -87,13 +74,9 @@
                 </div>
             </a> 
         </div>
-        <div class="clearfix"> </div>
-        
+        <div class="clearfix"> </div>   
     </div> 
 </div> 
-
-
-
     <div class="row" >
       <div class="col-md-4 mb-5">
         <div class="card h-100">
@@ -210,46 +193,47 @@
         </div>
       </div>
     </div>
-    <!-- /.row -->
   </div>
   <div class="col-md-4 about-bottoml-agileits">
   </div>
   <div class="col-md-8 about-bottomr-agileits">
       <div class="title-main-w3ls">
-          <h3 class="title-w3-agile"><span>M</span>ake <span>A</span>n <span>A</span>ppointment <span>N</span>ow</h3>
-      </div>
-          <h3>
-    
+          <h3 class="title-w3-agile"><span>R</span>ezervă <span>S</span>erviciile <span>D</span>orite <span>A</span>cum</h3>
+      </div><br><br>
+     <h3>
       <div class="clearfix"></div>
     </h3>
     <form #postForm="ngForm" (ngSubmit)="onCreateEvent(postForm.value)" >
-    <div class="table-responsive " >
-      <input type="text" class="form-control" placeholder="Salon"  id="place" [(ngModel)]="post.name"
+    <div class="form-agileits" >
+      <input type="text" class="form-control" placeholder="Nume Salon"  id="place" [(ngModel)]="post.name"
       name="place"  required>
-      <input type="text" class="form-control" placeholder="City"  id="city" [(ngModel)]="post.city"
+      <input type="text" class="form-control" placeholder="Oras"  id="city" [(ngModel)]="post.city"
       name="city"  required>
-            <br>
-            <input  id="start" class="form-control" placeholder="Date from" type="date"  ngModel
+            <br><br>
+            <input  id="start" class="form-control" placeholder="Data" type="date"  ngModel
             name="start" required>
-            <br>
-           <input  id="time" class="form-control" placeholder="Hour" type="time"  ngModel
+           <input  id="time" class="form-control" placeholder="Ora" type="time"  ngModel
                     name="time" required>
-            <br>
-            <input  id="service" class="form-control" placeholder="Choose a service from list " type="text"  ngModel
-                    name="service" required>
+            <br><br>
+            <select id="service" class="form-control" placeholder="Alege un serviciu din lista" type="text"  ngModel
+            name="service" required>
+              <option>{{post.serviciul01}}</option><option>{{post.serviciul02}}</option><option>{{post.serviciul03}}</option><option>{{post.serviciul04}}</option><option>{{post.serviciul05}}</option>
+              <option>{{post.serviciul1}}</option><option>{{post.serviciul2}}</option><option>{{post.serviciul3}}</option><option>{{post.serviciul4}}</option><option>{{post.serviciul5}}</option>
+              <option>{{post.serviciul11}}</option><option>{{post.serviciul22}}</option><option>{{post.serviciul33}}</option><option>{{post.serviciul44}}</option><option>{{post.serviciul55}}</option>
+            </select>
     </div>
-    <button class="btn btn-info float-right" type="submit">
-      Book
+    <div class="wthree-text"> 
+      <div class="clearfix"> </div>
+  </div><br><br><br>
+    <button class="btn btn-info float-left" type="submit">
+      Rezervă
      </button>
-</form><br><br><br><br>
+</form><br><br><br><br><br>
   <div class="clearfix"> </div>
-
-
   </div>
   <div class="map-w3-agile">
     <iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=45.6467734, 25.588868&amp;q=Strada%20Lung%C4%83%2C%20secondary%2C%20Bra%C8%99ov%2C%20Romania+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"></iframe>
     </div>
-  <!-- /.container -->
 
   
   
