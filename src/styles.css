@@ -247,7 +247,7 @@ button#trigger-overlay i {
 /*-- //banner-text --*/
 /*-- banner-top --*/
 .banner-w3layouts{
-    background: url(assets/images/s.jpg) no-repeat 0px 0px;
+    background: url(s.jpg) no-repeat 0px 0px;
 	 background-size: cover;	
 	-webkit-background-size: cover;	
 	-moz-background-size: cover;
@@ -326,16 +326,16 @@ button#trigger-overlay i {
     text-decoration: none;
     height: 34px;
     width: 34px;
-    background: url(assets/images/envelope-icon.png) no-repeat 0px 0px;
+    background: url(envelope-icon.png) no-repeat 0px 0px;
 }
 .callbacks_nav.next {
     left: auto;
-    background: url(assets/images/envelope-icon.png) no-repeat -35px 0px;
+    background: url(envelope-icon.png) no-repeat -35px 0px;
     right: 0px;
 }
 .callbacks_nav.prev {
     left: auto;
-    background: url(assets/images/envelope-icon.png) no-repeat 0px 0px;
+    background: url(envelope-icon.png) no-repeat 0px 0px;
     left: 0px;
 }
 #slider3-pager a {
@@ -752,7 +752,7 @@ input.checkbox:checked:after {
 	padding:0;
 }
 .about-bottoml-agileits {
-    background: url(assets/images/about.jpg) no-repeat 0px 0px;
+    background: url(about.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -871,7 +871,7 @@ option {
     background: #fd0006;
 }
 .w3ls-location {
-    background: url(assets/images/about.jpg) no-repeat 0px 0px;
+    background: url(about.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -917,7 +917,7 @@ option {
 /*-- //about --*/
 /*-- services --*/
 .services {
-    background: url(assets/images/about.png) no-repeat 980px 0px;
+    background: url(about.png) no-repeat 980px 0px;
     background-size: 940px;
 }
 .agile_offer_grid {
@@ -1269,7 +1269,7 @@ figure.effect-layla:hover img,figure.effect-layla:hover ul {
 
 }
 .img2{
-	background: url(assets/images/n2.jpg)no-repeat 0px 0px;
+	background: url(n2.jpg)no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -1277,7 +1277,7 @@ figure.effect-layla:hover img,figure.effect-layla:hover ul {
 	-ms-background-size:cover;
 }
 .img3{
-	background: url(assets/images/n3.jpg)no-repeat 0px 0px;
+	background: url(n3.jpg)no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -1285,7 +1285,7 @@ figure.effect-layla:hover img,figure.effect-layla:hover ul {
 	-ms-background-size:cover;
 }
 .img4{
-	background: url(assets/images/n4.jpg)no-repeat 0px 0px;
+	background: url(n4.jpg)no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -1518,7 +1518,7 @@ section.slider {
     padding: 0 !important;
 }
 .testimonials {
-    background: transparent url(assets/images/testimonials.jpg)no-repeat 0px 0px;
+    background: transparent url(testimonials.jpg)no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1947,7 +1947,7 @@ a.pinterest .front {
     height: 32px;
     border: none;
     text-indent: 100%;
-    background: url(assets/images/arr.png) no-repeat 0px 0px;
+    background: url(arr.png) no-repeat 0px 0px;
 }
 #toTopHover {
     width: 64px;
@@ -1963,7 +1963,7 @@ a.pinterest .front {
 /*--responsive--*/
 @media(max-width:1680px){
 	.services {
-		background: url(assets/images/about.png) no-repeat 740px 0px;
+		background: url(about.png) no-repeat 740px 0px;
 		background-size: 940px;
 	}
 	[class^='imghvr-'] .agile-figcaption, [class*=' imghvr-'] .agile-figcaption {
@@ -1972,7 +1972,7 @@ a.pinterest .front {
 }
 @media(max-width:1600px){
 	.services {
-		background: url(assets/images/about.png) no-repeat 659px 0px;
+		background: url(about.png) no-repeat 659px 0px;
 		background-size: 940px;
 	}
 	[class^='imghvr-'] .agile-figcaption, [class*=' imghvr-'] .agile-figcaption {
@@ -1996,7 +1996,7 @@ a.pinterest .front {
 		padding: 5em 3em 0em;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 659px 0px;
+		background: url(about.png) no-repeat 659px 0px;
 		background-size: 781px;
 	}
 }
@@ -2043,7 +2043,7 @@ a.pinterest .front {
 		width: 18.6%;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 585px 0px;
+		background: url(about.png) no-repeat 585px 0px;
 		background-size: 781px;
 	}
 	.about-bottomr-agileits img {
@@ -2068,7 +2068,7 @@ a.pinterest .front {
 		width: 46%;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 585px 0px;
+		background: url(about.png) no-repeat 585px 0px;
 		background-size: 696px;
 	}
 	.class_right h3 a {
@@ -2157,7 +2157,7 @@ a.pinterest .front {
 		padding: 1.2em 0 0 5.7em;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 489px 0px;
+		background: url(about.png) no-repeat 489px 0px;
 		background-size: 591px;
 	}
 	.w3_team_grid1 figure {
@@ -2204,7 +2204,7 @@ a.pinterest .front {
 		width: 49.09%;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 489px 0px;
+		background: url(about.png) no-repeat 489px 0px;
 		background-size: 561px;
 	}
 	.w3layouts_team_grid h4 {
@@ -2251,7 +2251,7 @@ a.pinterest .front {
 		margin: 9px 0 5px;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 489px 0px;
+		background: url(about.png) no-repeat 489px 0px;
 		background-size: 535px;
 	}
 	.ui-datepicker {
@@ -2276,7 +2276,7 @@ a.pinterest .front {
 		width: 31.7%;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 489px 0px;
+		background: url(about.png) no-repeat 489px 0px;
 		background-size: 502px;
 	}
 	.w3layouts_team_grid {
@@ -2367,7 +2367,7 @@ a.pinterest .front {
 		width: 42%;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 489px 0px;
+		background: url(about.png) no-repeat 489px 0px;
 		background-size: 411px;
 	}
 	.w3gallery-grids {
@@ -2437,7 +2437,7 @@ a.pinterest .front {
 		height: 20em;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 440px 0px;
+		background: url(about.png) no-repeat 440px 0px;
 		background-size: 360px;
 	}
 }
@@ -2452,7 +2452,7 @@ a.pinterest .front {
 		margin-right: 0px!important;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 423px 0px;
+		background: url(about.png) no-repeat 423px 0px;
 		background-size: 345px;
 	}
 	.class_left {
@@ -2510,7 +2510,7 @@ a.pinterest .front {
 		font-size: 1.7em;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 405px 0px;
+		background: url(about.png) no-repeat 405px 0px;
 		background-size: 331px;
 	}
 	.header-w3ls h1 a span.logo-right-w3l {
@@ -2534,7 +2534,7 @@ a.pinterest .front {
 }
 @media(max-width:667px){
 	.services {
-		background: url(assets/images/about.png) no-repeat 387px 0px;
+		background: url(about.png) no-repeat 387px 0px;
 		background-size: 280px;
 	}
 	.agile_offer_grid_pos p {
@@ -2571,7 +2571,7 @@ a.pinterest .front {
 		letter-spacing: .5px;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 387px 0px;
+		background: url(about.png) no-repeat 387px 0px;
 		background-size: 253px;
 	}
 	.agile_offer_grid h4 {
@@ -2636,7 +2636,7 @@ a.pinterest .front {
 		padding: 2em 20em 2em 2em;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 344px 0px;
+		background: url(about.png) no-repeat 344px 0px;
 		background-size: 256px;
 	}
 	.class_left {
@@ -2657,7 +2657,7 @@ a.pinterest .front {
 		padding: 2em 1em 23em 1em;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 192px 0px;
+		background: url(about.png) no-repeat 192px 0px;
 		background-size: 376px;
 		padding-top: 14em!important;
 	}
@@ -2708,7 +2708,7 @@ a.pinterest .front {
 		width: 63%;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 150px 0px;
+		background: url(about.png) no-repeat 150px 0px;
 		background-size: 330px;
 	}
 	.agile_offer_grid {
@@ -2763,7 +2763,7 @@ a.pinterest .front {
 		min-height: 300px;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 83px 0px;
+		background: url(about.png) no-repeat 83px 0px;
 		background-size: 357px;
 		padding-top: 18em!important;
 	}
@@ -2859,7 +2859,7 @@ a.pinterest .front {
 		padding-top: 1em;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 27px 0px;
+		background: url(about.png) no-repeat 27px 0px;
 		background-size: 357px;
 	}
 	.flex-control-nav {
@@ -2901,7 +2901,7 @@ a.pinterest .front {
 		padding: 2em 1em 19em 1em;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat 18px 0px;
+		background: url(about.png) no-repeat 18px 0px;
 		background-size: 357px;
 	}
 	[class^='imghvr-'] .agile-figcaption, [class*=' imghvr-'] .agile-figcaption {
@@ -2939,7 +2939,7 @@ a.pinterest .front {
 		padding: 2em 1em 13em 1em;
 	}
 	.services {
-		background: url(assets/images/about.png) no-repeat -20px 0px;
+		background: url(about.png) no-repeat -20px 0px;
 		background-size: 340px;
 	}
 	.agile_offer_grid:nth-child(odd) {
@@ -4488,7 +4488,7 @@ html[xmlns] .slides {display: block;}
 	width: 32px;
     height: 32px;
     margin: 0;
-    background:url(assets/images/next.png) no-repeat 0px 0px;
+    background:url(next.png) no-repeat 0px 0px;
     position: absolute;
     z-index: 10;
     cursor: pointer;
@@ -4498,7 +4498,7 @@ html[xmlns] .slides {display: block;}
 	display:block;
 }
 .flex-direction-nav .flex-next {
-    background: url(assets/images/back.png) no-repeat 0px 0px;
+    background: url(back.png) no-repeat 0px 0px;
     right: 50%;
     bottom: 0.3%;
 }
